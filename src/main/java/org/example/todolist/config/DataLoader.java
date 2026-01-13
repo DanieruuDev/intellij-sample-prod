@@ -13,7 +13,7 @@ import java.io.InputStream;
 import java.util.List;
 
 @Component
-
+@Profile("production")
 public class DataLoader implements CommandLineRunner {
 
     private final ObjectMapper objectMapper;
