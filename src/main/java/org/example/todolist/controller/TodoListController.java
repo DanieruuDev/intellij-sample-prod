@@ -19,7 +19,7 @@ public class TodoListController {
         this.t = t;
     }
 
-    @GetMapping("")
+    @GetMapping("/getAll")
     public List<Todo> findAll (){
         return t.findAll();
     }
