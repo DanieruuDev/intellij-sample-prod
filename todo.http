@@ -1,0 +1,34 @@
+### Find all todos
+GET http://localhost:8080/api/todos
+
+### Find by id
+GET http://localhost:8080/api/todos/1
+
+### Delete todos
+DELETE http://localhost:8080/api/todos/99
+
+
+### Create todo
+POST http://localhost:8080/api/todos
+Content-Type: application/json
+
+{
+    "id": 2,
+    "content": "",
+    "status": "IN_PROGRESS",
+    "created_at": "2026-01-08T16:47:03.0507512",
+    "updated_at": null
+}
+
+### Update todo
+PUT http://localhost:8080/api/todos
+Content-Type: application/json
+
+{
+    "id": 1,
+    "content": "SECONDDD!!!!",
+    "status": "IN_PROGRESS",
+    "created_at": "2026-01-08T16:47:03.0507512",
+    "updated_at": "2026-01-08T16:47:03.0507512"
+}
+
